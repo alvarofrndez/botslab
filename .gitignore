@@ -1,0 +1,88 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# archived/replaced designs (kept locally, never committed or served)
+/archive/
+
+# testing
+/coverage
+/playwright-report/
+/test-results/
+
+# next.js
+/.next/
+/out/
+.turbo/
+
+# production
+/build
+/dist
+
+# env files (secrets) - the example template can be committed
+.env
+.env.*
+!.env.example
+
+# keys & certificates
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# cache
+.eslintcache
+.cache/
+.npm/
+*.tgz
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# vercel
+.vercel
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# editors / IDEs
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+*.swo
+*~
+
+# Claude Code local files (shared CLAUDE.md / AGENTS.md stay tracked)
+.claude/settings.local.json
+.claude/scratchpad/
+CLAUDE.local.md
+
+# temp / backups
+tmp/
+temp/
+*.bak
+*.orig
