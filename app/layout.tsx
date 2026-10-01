@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import { Host_Grotesk } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
 const sans = Host_Grotesk({ variable: "--font-sans", subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
   return (
     <html lang="en" className={sans.variable}>
       <body>{children}</body>
+      <Analytics/>
     </html>
   );
 }
